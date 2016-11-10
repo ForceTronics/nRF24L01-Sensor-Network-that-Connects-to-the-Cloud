@@ -9,16 +9,16 @@
 #include "PhantMKR1K.h" //library was leveraged from Sparkfun's Phant library and modified to work on Arduino MKR1000
 
 RTCZero rtc; //create real time clock object
-char ssid[] = "NETGEAR42"; //  your network SSID (name)
-char pass[] = "excitedstreet973";    // your network password (use for WPA, or use as key for WEP)
+char ssid[] = "YourNetwork"; //  your network SSID (name)
+char pass[] = "YourPassword";    // your network password (use for WPA, or use as key for WEP)
 
 int status = WL_IDLE_STATUS; //set status variable
 const int LED_PIN = 6; // MKR1000's built-in LED
 
 //define areas for phant cloud address and security keys
 const char PhantHost[] = "data.sparkfun.com";
-const char PublicKey[] = "NJO4a03mWjtv0M3JyVL3";
-const char PrivateKey[] = "5dZx6KNnPGCXwDY2jAxY";
+const char PublicKey[] = "YourPublicKey";
+const char PrivateKey[] = "YourPrivateKey";
 
 // start RF24 communication layer
 RF24 radio(5,7);
